@@ -1,6 +1,8 @@
 # Raspberry Pi OLED Monitor
 
-A lightweight single-file Raspberry Pi system monitor for a 128x64 SSD1306 I2C OLED display.
+A lightweight single-file Raspberry Pi system information monitor for a 128x64 SSD1306 I2C OLED display.
+
+一款适用于 128x64 SSD1306 I2C OLED 显示屏的轻量级单文件树莓派系统信息监控。
 
 The script shows:
 - Current date and time
@@ -12,7 +14,7 @@ The script shows:
 ## Hardware
 
 - Raspberry Pi with I2C enabled
-- SSD1306 OLED (display size: 128x64)
+- SSD1306 OLED display (size: 128x64)
 
 ## Installation and Run
 
