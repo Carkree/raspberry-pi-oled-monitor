@@ -1,2 +1,4 @@
 luma.oled
+Pillow
+smbus2
 psutil

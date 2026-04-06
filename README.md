@@ -1,15 +1,18 @@
 # Raspberry Pi OLED Monitor
 
-A lightweight single-file Raspberry Pi system information monitor for a 128x64 SSD1306 I2C OLED display.
+A lightweight single-file Raspberry Pi system information monitor for a SSD1306 I2C OLED display.
 
-一款适用于 128x64 SSD1306 I2C OLED 显示屏的轻量级单文件树莓派系统信息监控。
+一款适用于 SSD1306 I2C OLED 显示屏的轻量级单文件树莓派系统信息监控。
 
-The script shows:
-- Current date and time
-- Local IP address
-- CPU usage
-- Memory usage
-- CPU temperature
+## Features:
+- Display local IP address
+- CPU usage and temperature monitoring
+- Memory usage monitoring
+- Real-time clock
+
+Supports multiple OLED resolutions:
+- 128×64 
+- 128×32 (only display CPU temperature)
 
 ## Hardware
 
@@ -17,17 +20,18 @@ The script shows:
 - SSD1306 OLED display (size: 128x64)
 
 ## Installation and Run
+First, make sure that you have enabled I2C
 
 ```bash
 python3 -m pip install -r requirements.txt
 ```
 
 ```bash
-python3 main.py
+python3 oled_128x32.py
+# or
+python3 oled_128x64.py
 ```
 
 ## Notes
 
-- If the network is unavailable, the IP field will show `NoNet`.
-- If CPU temperature cannot be read, the temperature field will show `N/A`.
-- This project is intended for Raspberry Pi and may not behave the same on non-Linux systems.
+- This project was tested on the Raspberry Pi 4B with the Ubuntu system and may not behave the same on other systems.
